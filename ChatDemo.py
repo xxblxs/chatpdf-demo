@@ -6,7 +6,7 @@ import os
 import openai
 
 openai.api_base = "https://api.app4gpt.com/v1"
-os.environ["OPENAI_API_KEY"] = 'sk-You-Api-Key'
+os.environ["OPENAI_API_KEY"] = 'you-API-KEY'
 
 def create_service_context():
 
@@ -17,10 +17,10 @@ def create_service_context():
     chunk_size_limit = 600
 
     #allows the user to explicitly set certain constraint parameters
-     = PromptHelper(max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
+    prompt_helper = PromptHelper(max_input_size, num_outputs, max_chunk_overlap, chunk_size_limit=chunk_size_limit)
 
     #LLMPredictor is a wrapper class around LangChain's LLMChain that allows easy integration into LlamaIndex
-    llm_predictor = LLMPredictor(llm=ChatOpenAI(temperature=0.5, model_name="gpt-4", max_tokens=num_outputs))
+    llm_predictor = LLMPredictor(llm=ChatOpenAI(temperature=0.5, model_name="gpt-3.5-turbo", max_tokens=num_outputs))
 
     #constructs service_context
     service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor, prompt_helper=prompt_helper)
