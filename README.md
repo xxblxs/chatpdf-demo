@@ -1,3 +1,7 @@
-# DevSecOpsKB-LlamaIndex-LangChain-OpenAI
+# chatpdfDemo-LlamaIndex-LangChain-OpenAI
+使用 LlamaIndex, LangChain, OpenAI 搭建自定义本地知识库聊天机器人
 
-Refer to my blog [Building Your Own DevSecOps Knowledge Base with OpenAI, LangChain, and LlamaIndex](https://betterprogramming.pub/building-your-own-devsecops-knowledge-base-with-openai-langchain-and-llamaindex-b28cda15abb7?sk=325cfa8160e0187af8c6ff11fd8c1eaf) for detailed instructions on how to run this knowledge base chatbot.
+文字版教程知乎链接：https://zhuanlan.zhihu.com/p/636487854
+视频版教程B站链接：https://www.bilibili.com/video/BV18o4y1N7Dm/?vd_source=64082667376177cbb5f8c337c6c08ff0
+欢迎加入Q群184652587  讨论更多AIGC相关知识和内容，也可以像群主申请gpt API接口试用积分
+![](https://www.app4gpt.com/admin/WechatIMG3865.jpeg)
